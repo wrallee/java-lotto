@@ -29,7 +29,7 @@ public class LottoGenerator {
 			.collect(toSet()));
 	}
 
-	public static Lotto generate(String text) {
+	public static Lotto generate(String text) { // TODO Lotto에 존재해야 되는 로직인지 고민할 것
 		String[] split = text.split(DELIMITER);
 		return new Lotto(Stream.of(split)
 			.map(LottoNumber::valueOf)

@@ -30,7 +30,7 @@ public class InputView {
 	public static Lottos manualLottos(Wallet wallet) {
 		System.out.println("\n수동으로 구매할 로또 수를 입력해 주세요.");
 		int manualCount = scanner.nextInt();
-		if (wallet.buyLimit() < manualCount) {
+		if (wallet.buyLimit() < manualCount) { // TODO 도메인 로직과 View를 분리할 것
 			throw new NotEnoughMoneyException(manualCount + "개 만큼 구매할 수 없습니다.");
 		}
 

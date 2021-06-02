@@ -5,6 +5,7 @@ import lotto.shop.Lottos;
 
 public class Application {
 
+	// TODO 패키지 분리에 대해 고민할 것
 	public static void main(String[] args) {
 		LottoShop shop = new LottoShop();
 
